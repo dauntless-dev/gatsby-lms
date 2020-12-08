@@ -62,7 +62,7 @@ const plugins = [
   {
     resolve: `gatsby-plugin-netlify-identity`,
     options: {
-      url: "https://freejapaneselessons.com",
+      url: "https://cocky-mcclintock-b78c5c.netlify.app/",
     },
   },
 'gatsby-plugin-netlify-identity-widget',
