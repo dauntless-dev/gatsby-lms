@@ -49,6 +49,7 @@
     "lodash.flatten": "^4.4.0",
     "lodash.startcase": "^4.4.0",
     "netlify-identity-widget": "^1.9.1",
+    "netlify-lambda": "^2.0.1",
     "node-fetch": "^2.6.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -68,7 +69,8 @@
   "main": "n/a",
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths"
+    "build": "gatsby build --prefix-paths",
+    "postinstall": "netlify-lambda install"
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.17",

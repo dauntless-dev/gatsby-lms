@@ -2,7 +2,10 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const { faunaFetch } = require('./fauna');
 
 exports.handler = async (event) => {
-  const { user } = JSON.parse(event.body);
+  // const { user1 } = JSON.parse(event.body);
+  const user = {
+    email: 'ramon.cora.amaya@gmail.com'
+  };
 
   // create a new customer in Stripe
   const customer = await stripe.customers.create({ email: user.email });
