@@ -70,6 +70,9 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
+    "start:lambda": "netlify-serve functions",
+    "build:lambda": "netlify-lambda build functions",
+    "prod": "npm run build; npm run build:lambda",
     "postinstall": "netlify-lambda install"
   },
   "devDependencies": {
