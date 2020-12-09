@@ -31,7 +31,7 @@ export const handleLogin = callback => {
     netlifyIdentity.open()
     netlifyIdentity.on('login', user => {
       clog('logged in!', { user })
-       fetch('/.netlify/functions/idenity-signup', {
+       fetch('/.netlify/functions/identity-signup', {
         method: 'POST',
         body: JSON.stringify({ user }),
       })
